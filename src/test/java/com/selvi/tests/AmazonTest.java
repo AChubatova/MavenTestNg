@@ -21,6 +21,10 @@ public class AmazonTest {
 
     @Test
     public void testSearch(){
+	  System.out.println("##teamcity[testStarted name='MyTest.test1']")
+	  
+	  
+	  
 	  try 
             {
                 Thread.sleep(120000);
@@ -30,6 +34,8 @@ public class AmazonTest {
             // this part is executed when an exception (in this example InterruptedException) occurs
             }
 	    Assert.assertEquals("Google", "Google");
+	    System.out.println("##teamcity[testFailed name='MyTest.test1' message='failure message' details='message and stack trace']")
+	    System.out.println("##teamcity[testFinished name='MyTest.test1']")
     }
 
     @AfterTest

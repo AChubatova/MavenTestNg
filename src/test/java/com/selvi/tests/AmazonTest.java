@@ -7,6 +7,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.Assert;
+import java.lang.Thread;
 
 public class AmazonTest {
 
@@ -20,6 +21,7 @@ public class AmazonTest {
 
     @Test
     public void testSearch(){
+	    	Thread.sleep(10000)
 		Assert.assertEquals("Google", "Google");
     }
 

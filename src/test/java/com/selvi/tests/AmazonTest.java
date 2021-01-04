@@ -34,8 +34,8 @@ public class AmazonTest {
             // 
             }
 	    Assert.assertEquals("Google2", "Google");
-	    System.out.println("##teamcity[testPassed name='MyTest1.longTest'");
-	    System.out.println("##teamcity[testFinished name='MyTest1.longTest']");
+	    //System.out.println("##teamcity[testPassed name='MyTest1.longTest'");
+	    //System.out.println("##teamcity[testFinished name='MyTest1.longTest']");
 	    //System.out.println("Hi");
     }
 	

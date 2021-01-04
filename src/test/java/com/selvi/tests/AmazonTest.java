@@ -24,7 +24,7 @@ public class AmazonTest {
 	  System.out.println("##teamcity[testStarted name='MyTest.test1']");
 	  try 
             {
-                Thread.sleep(12000);
+                Thread.sleep(1200000);
             } 
             catch(InterruptedException e)
             {

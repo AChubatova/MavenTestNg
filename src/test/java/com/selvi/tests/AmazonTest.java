@@ -9,30 +9,7 @@ import org.testng.annotations.Test;
 import org.testng.Assert;
 import java.lang.Thread;
 
-public class AmazonTest0 {
 
-    private WebDriver driver;
-
-
-    @BeforeTest
-    public void setupSelenium(){
-        System.out.println("beforetest");
-    }
-
-	
-   @Test
-    public void testSearch(){
-	  System.out.println("##teamcity[testStarted name='MyTest1.test1']");
-	    Assert.assertEquals("Google", "Google");
-	    System.out.println("##teamcity[testPassed name='MyTest1.test1'");
-	    System.out.println("##teamcity[testFinished name='MyTest1.test1']");
-    }
-	
-    @AfterTest
-    public void closeSelenium(){
-        System.out.println("AfterTest");
-    }
-}
 
 public class AmazonTest {
 
@@ -47,7 +24,7 @@ public class AmazonTest {
 	
    @Test
     public void testSearch(){
-	  System.out.println("##teamcity[testStarted name='MyTest1.longTest']");
+	  //System.out.println("##teamcity[testStarted name='MyTest1.longTest']");
 	  try 
             {
                 Thread.sleep(10000);
@@ -57,8 +34,8 @@ public class AmazonTest {
             // 
             }
 	    Assert.assertEquals("Google", "Google");
-	    System.out.println("##teamcity[testPassed name='MyTest1.longTest'");
-	    System.out.println("##teamcity[testFinished name='MyTest1.longTest']");
+	    //System.out.println("##teamcity[testPassed name='MyTest1.longTest'");
+	    //System.out.println("##teamcity[testFinished name='MyTest1.longTest']");
     }
 	
     @AfterTest
@@ -67,29 +44,6 @@ public class AmazonTest {
     }
 }
 
-public class AmazonTest2 {
 
-    private WebDriver driver;
-
-
-    @BeforeTest
-    public void setupSelenium(){
-        System.out.println("beforetest");
-    }
-
-	
-   @Test
-    public void testSearch(){
-	  System.out.println("##teamcity[testStarted name='MyTest1.test2']");
-	    Assert.assertEquals("Google", "Google");
-	    System.out.println("##teamcity[testPassed name='MyTest1.test2'");
-	    System.out.println("##teamcity[testFinished name='MyTest1.test2']");
-    }
-	
-    @AfterTest
-    public void closeSelenium(){
-        System.out.println("AfterTest");
-    }
-}
 
 

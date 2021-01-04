@@ -23,7 +23,7 @@ public class AmazonTest {
     public void testSearch(){
 	  try 
             {
-                Thread.sleep(12000);
+                Thread.sleep(120000);
             } 
             catch(InterruptedException e)
             {

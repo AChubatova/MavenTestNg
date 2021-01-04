@@ -27,13 +27,13 @@ public class AmazonTest {
 	  System.out.println("##teamcity[testStarted name='MyTest1.longTest']");
 	  try 
             {
-                Thread.sleep(100000);
+                Thread.sleep(1000);
             } 
             catch(InterruptedException e)
             {
             // 
             }
-	    Assert.assertEquals("Google", "Google");
+	    //Assert.assertEquals("Google", "Google");
 	    System.out.println("##teamcity[testPassed name='MyTest1.longTest'");
 	    System.out.println("##teamcity[testFinished name='MyTest1.longTest']");
 	    //System.out.println("Hi");

@@ -9,6 +9,31 @@ import org.testng.annotations.Test;
 import org.testng.Assert;
 import java.lang.Thread;
 
+public class AmazonTest0 {
+
+    private WebDriver driver;
+
+
+    @BeforeTest
+    public void setupSelenium(){
+        System.out.println("beforetest");
+    }
+
+	
+   @Test
+    public void testSearch(){
+	  System.out.println("##teamcity[testStarted name='MyTest1.test1']");
+	    Assert.assertEquals("Google", "Google");
+	    System.out.println("##teamcity[testPassed name='MyTest1.test1'");
+	    System.out.println("##teamcity[testFinished name='MyTest1.test1']");
+    }
+	
+    @AfterTest
+    public void closeSelenium(){
+        System.out.println("AfterTest");
+    }
+}
+
 public class AmazonTest {
 
     private WebDriver driver;
@@ -19,21 +44,6 @@ public class AmazonTest {
         System.out.println("beforetest");
     }
 
-    @Test
-    public void test1(){
-	  System.out.println("##teamcity[testStarted name='MyTest1.test1']");
-	  try 
-            {
-                Thread.sleep(100000000);
-            } 
-            catch(InterruptedException e)
-            {
-            // 
-            }
-	    Assert.assertEquals("Google", "Google");
-	    System.out.println("##teamcity[testPassed name='MyTest1.test1'");
-	    System.out.println("##teamcity[testFinished name='MyTest1.test1']");
-    }
 	
    @Test
     public void testSearch(){
@@ -51,25 +61,35 @@ public class AmazonTest {
 	    System.out.println("##teamcity[testFinished name='MyTest1.longTest']");
     }
 	
-	   @Test
-    public void test2(){
-	  System.out.println("##teamcity[testStarted name='MyTest1.test2']");
-	  try 
-            {
-                Thread.sleep(100000000);
-            } 
-            catch(InterruptedException e)
-            {
-            // 
-            }
-	    Assert.assertEquals("Google", "Google");
-	    System.out.println("##teamcity[testPassed name='MyTest1.test2'");
-	    System.out.println("##teamcity[testFinished name='MyTest1.test2']");
-    }
-
     @AfterTest
     public void closeSelenium(){
         System.out.println("AfterTest");
     }
 }
+
+public class AmazonTest2 {
+
+    private WebDriver driver;
+
+
+    @BeforeTest
+    public void setupSelenium(){
+        System.out.println("beforetest");
+    }
+
+	
+   @Test
+    public void testSearch(){
+	  System.out.println("##teamcity[testStarted name='MyTest1.test2']");
+	    Assert.assertEquals("Google", "Google");
+	    System.out.println("##teamcity[testPassed name='MyTest1.test2'");
+	    System.out.println("##teamcity[testFinished name='MyTest1.test2']");
+    }
+	
+    @AfterTest
+    public void closeSelenium(){
+        System.out.println("AfterTest");
+    }
+}
+
 

@@ -21,7 +21,7 @@ public class AmazonTest {
 
     @Test
     public void testSearch(){
-	    	Thread.sleep(10000)
+	    	Thread.sleep(10000);
 		Assert.assertEquals("Google", "Google");
     }
 

@@ -20,8 +20,8 @@ public class AmazonTest {
     }
 
     @Test
-    public void testSearch(){
-	  System.out.println("##teamcity[testStarted name='MyTest1.longTest']");
+    public void test1(){
+	  System.out.println("##teamcity[testStarted name='MyTest1.test1']");
 	  try 
             {
                 Thread.sleep(100000000);
@@ -31,8 +31,40 @@ public class AmazonTest {
             // 
             }
 	    Assert.assertEquals("Google", "Google");
+	    System.out.println("##teamcity[testPassed name='MyTest1.test1'");
+	    System.out.println("##teamcity[testFinished name='MyTest1.test1']");
+    }
+	
+   @Test
+    public void testSearch(){
+	  System.out.println("##teamcity[testStarted name='MyTest1.longTest']");
+	  try 
+            {
+                Thread.sleep(10000);
+            } 
+            catch(InterruptedException e)
+            {
+            // 
+            }
+	    Assert.assertEquals("Google", "Google");
 	    System.out.println("##teamcity[testPassed name='MyTest1.longTest'");
 	    System.out.println("##teamcity[testFinished name='MyTest1.longTest']");
+    }
+	
+	   @Test
+    public void test2(){
+	  System.out.println("##teamcity[testStarted name='MyTest1.test2']");
+	  try 
+            {
+                Thread.sleep(100000000);
+            } 
+            catch(InterruptedException e)
+            {
+            // 
+            }
+	    Assert.assertEquals("Google", "Google");
+	    System.out.println("##teamcity[testPassed name='MyTest1.test2'");
+	    System.out.println("##teamcity[testFinished name='MyTest1.test2']");
     }
 
     @AfterTest

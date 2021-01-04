@@ -27,7 +27,7 @@ public class AmazonTest {
 	  
 	  try 
             {
-                Thread.sleep(120000);
+                Thread.sleep(12000);
             } 
             catch(InterruptedException e)
             {

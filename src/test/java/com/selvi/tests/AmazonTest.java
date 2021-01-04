@@ -21,8 +21,15 @@ public class AmazonTest {
 
     @Test
     public void testSearch(){
-	    	Thread.sleep(10000);
-		Assert.assertEquals("Google", "Google");
+	  try 
+            {
+                Thread.sleep(12000);
+            } 
+            catch(InterruptedException e)
+            {
+            // this part is executed when an exception (in this example InterruptedException) occurs
+            }
+	    Assert.assertEquals("Google", "Google");
     }
 
     @AfterTest

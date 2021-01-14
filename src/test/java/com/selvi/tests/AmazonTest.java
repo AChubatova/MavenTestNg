@@ -24,7 +24,7 @@ public class AmazonTest {
 	
    @Test
     public void testSearch(){
-	  System.out.println("##teamcity[testStarted name='MyTest1.longTest']");
+	  //System.out.println("##teamcity[testStarted name='MyTest1.longTest']");
 	  try 
             {
                 Thread.sleep(120000);

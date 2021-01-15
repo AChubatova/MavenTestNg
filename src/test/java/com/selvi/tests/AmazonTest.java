@@ -24,19 +24,19 @@ public class AmazonTest {
 	
    @Test
     public void testSearch(){
-	  //System.out.println("##teamcity[testStarted name='MyTest1.longTest']");
+	  System.out.println("##teamcity[testStarted name='MyTest1.longTest']");
 	  try 
             {
-                Thread.sleep(200000);
+                Thread.sleep(1000);
             } 
             catch(InterruptedException e)
             {
             // 
             }
 	    Assert.assertEquals("Google", "Google");
-	    //System.out.println("##teamcity[testPassed name='MyTest1.longTest'");
-	    //System.out.println("##teamcity[testFinished name='MyTest1.longTest']");
-	    //System.out.println("Hi");
+	    System.out.println("##teamcity[testPassed name='MyTest1.longTest'");
+	    System.out.println("##teamcity[testFinished name='MyTest1.longTest']");
+
     }
 	
     @AfterTest

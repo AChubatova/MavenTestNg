@@ -19,10 +19,10 @@ public class AppTest {
 
     @Test
     public void testSearch(){
-	    	//System.out.println("##teamcity[testStarted name='MyTest2.shortTest']");
+	    	System.out.println("##teamcity[testStarted name='MyTest2.shortTest']");
 		Assert.assertEquals("Google", "Google");
-	    	//System.out.println("##teamcity[testPassed name='MyTest2.shortTest']");
-	    	//System.out.println("##teamcity[testFinished name='MyTest2.shortTest']");
+	    	System.out.println("##teamcity[testPassed name='MyTest2.shortTest']");
+	    	System.out.println("##teamcity[testFinished name='MyTest2.shortTest']");
     }
 
     @AfterTest
